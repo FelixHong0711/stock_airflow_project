@@ -92,9 +92,9 @@ After the containers are up and running, you can access PGAdmin at http://localh
         - Username: Your PostgreSQL username.
         
         - Password: Your PostgreSQL password.
+![register2](images/server_register_2.png)
 
 After entering the necessary information, click Save to establish the connection.
-![register2](images/server_register_2.png)
 
 You have now set up the server and database for your stock data.
 
@@ -104,6 +104,16 @@ Please follow the connection_string.yml to set up the connections in Airflow.
 
 ### 5. Run Dags
 You can access to Airflow UI and trigger the DAG at this stage.
+
+### Slack Set up
+This is an optional part, if you have already known how to set up Slack for sending DAG run status, please skip this part.
+
+1. Create New Slack App: Go to https://api.slack.com/apps and click on the Create New App button, then choose `From scratch` option to create a new slack application.
+2. In the next popup add a new `App Name` and select the `Slack Workspace` (created beforehand) and click on the `Create App` button
+3. Navigate to `OAuth & Permissions`, then add permission as below, then go to OAuth Tokens and create you token (this is the token for setting connection in Airflow)
+![slackpermission](images/permission.png)
+4. Navigate to the DAG file and change the `channel="<your channel name>` in SlackNotifier.
+5. Run DAG and receive status email in your channel!
 
 
 

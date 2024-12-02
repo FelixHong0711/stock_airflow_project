@@ -2,3 +2,5 @@
 logs/*
 !logs/.keep
 .DS_Store
+dags/local/__pycache__/*
+include/data/minio/.minio.sys/tmp/.trash/*
