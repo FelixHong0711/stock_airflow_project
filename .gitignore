@@ -1,0 +1,4 @@
+.env
+logs/*
+!logs/.keep
+.DS_Store

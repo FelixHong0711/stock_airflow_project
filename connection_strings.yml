@@ -1,0 +1,36 @@
+Stock Api:
+  - Connection Id: stock_api
+  - Connection Type: HTTP
+  - Host: https://query1.finance.yahoo.com/
+  - Extra: 
+    {
+      "endpoint": "v8/finance/chart/",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0"
+      }
+    }
+
+MinIo:
+  - Connection Id: minio
+  - Connection Type: Amazon Web Services
+  - AWS Access Key ID: <username>
+  - AWS Secret Access Key: <password>
+  - Extra: 
+    {
+      "endpoint_url": "http://host.docker.internal:9000"
+    }
+
+Postgres:
+  - Connection Id: postgres
+  - Connection Type: Postgres
+  - Host: host.docker.internal
+  - Database: postgres
+  - Login: <username>
+  - Password: <password>
+  - Port: 5432
+
+Slack:
+  - Connection Id: slack
+  - Connection Type: Slack API
+  - Slack API Token: #replace with your generated token
