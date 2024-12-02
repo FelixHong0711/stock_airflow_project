@@ -35,6 +35,7 @@ cd <repository-name>
 
 ### 2. Setting Up the `.env` File for Airflow and Related Services
 Please create `.env` file in the location below 
+
 ![Structure](images/project_structure.png)
 
 ```bash
