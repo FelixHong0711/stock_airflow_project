@@ -14,7 +14,7 @@ This Airflow project automates the process of fetching, transforming, and loadin
 
 Please refer to the image below for the pipeline of this project.
 
-![Pipeline](images/pipeline_2.png)
+![Pipeline](images/data_pipeline.png)
 
 ## Prerequisites
 1. **Python**: preferably Python 3.8.
